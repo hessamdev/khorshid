@@ -1,0 +1,63 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="@dimen/SpaceSmall"
+    android:background="@drawable/activity_main_recyclerview_main_bg">
+
+    <ImageView
+        android:id="@+id/ImageViewImage"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/activity_main_recyclerview_main_image"
+        android:contentDescription="@null"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/SpaceSmall"
+        android:layout_marginEnd="@dimen/SpaceSmall"
+        android:fontFamily="@font/iran_sans_regular"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/FontSmall"
+        app:layout_constraintEnd_toStartOf="@+id/ImageViewImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/SpaceLarge"
+        android:layout_marginEnd="@dimen/SpaceSmall"
+        android:fontFamily="@font/iran_sans_light"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/FontSmall"
+        app:layout_constraintEnd_toStartOf="@+id/ImageViewImage"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewName" />
+
+    <TextView
+        android:id="@+id/TextViewAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="@dimen/SpaceSmall"
+        android:text="@string/ActivityMainRecyclerViewMainAdd"
+        android:fontFamily="@font/iran_sans_light"
+        android:background="@drawable/activity_main_recyclerview_main_add"
+        android:textColor="@color/White"
+        android:textSize="@dimen/FontTiny"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

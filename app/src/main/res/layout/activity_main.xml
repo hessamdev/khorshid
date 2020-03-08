@@ -1,0 +1,107 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/Primary1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ImageViewSearch"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@null"
+                android:padding="13dp"
+                android:src="@drawable/activity_main_search"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/iran_sans_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/SpaceMedium"
+                android:paddingEnd="@dimen/SpaceMedium"
+                android:text="@string/ActivityMainName"
+                android:textColor="@color/White"
+                android:textSize="@dimen/FontLarge"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/Primary1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ConstraintLayoutActionBar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayoutSearchBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/SpaceMedium"
+                android:layout_marginEnd="@dimen/SpaceMedium"
+                android:layout_marginBottom="@dimen/SpaceSmall"
+                android:background="@drawable/activity_main_search_bg">
+
+                <ImageView
+                    android:id="@+id/ImageViewSearchDo"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/activity_main_search_do"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/activity_main_search"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/EditTextSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:background="@null"
+                    android:fontFamily="@font/iran_sans_light"
+                    android:hint="@string/ActivityMainSearchHint"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:layoutDirection="ltr"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColor="@color/Black"
+                    android:textColorHighlight="@color/Primary4"
+                    android:textCursorDrawable="@drawable/general_cursor_color"
+                    android:textSize="@dimen/FontMedium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ImageViewSearchDo"
+                    app:layout_constraintWidth_percent="0.80" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/SpaceSmall"
+            android:layout_marginTop="@dimen/SpaceSmall"
+            android:layout_marginEnd="@dimen/SpaceSmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ConstraintLayoutSearch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

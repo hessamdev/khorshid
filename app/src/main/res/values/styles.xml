@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+</resources>

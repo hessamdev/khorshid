@@ -1,0 +1,25 @@
+<resources>
+
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+
+    <color name="Primary5">#bfd6f6</color>
+    <color name="Primary4">#8dbdff</color>
+    <color name="Primary3">#64a1f4</color>
+    <color name="Primary2">#4a91f2</color>
+    <color name="Primary1">#3b7dd8</color>
+
+    <color name="Accent1">#011f4b</color>
+    <color name="Accent2">#03396c</color>
+    <color name="Accent3">#005b96</color>
+    <color name="Accent4">#6497b1</color>
+    <color name="Accent5">#b3cde0</color>
+
+    <color name="Gray5">#343d46</color>
+    <color name="Gray4">#4f5b66</color>
+    <color name="Gray3">#65737e</color>
+    <color name="Gray2">#a7adba</color>
+    <color name="Gray1">#c0c5ce</color>
+    <color name="Gray">#eeeeee</color>
+
+</resources>

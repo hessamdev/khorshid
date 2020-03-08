@@ -1,0 +1,29 @@
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/Primary1">
+
+    <item android:id="@android:id/mask">
+
+        <shape android:shape="oval">
+
+            <corners android:radius="5dp" />
+
+            <solid android:color="@color/Primary1" />
+
+        </shape>
+
+    </item>
+
+    <item android:id="@android:id/background">
+
+        <shape android:shape="oval">
+
+            <solid android:color="@color/Primary3" />
+
+            <corners android:radius="5dp" />
+
+        </shape>
+
+    </item>
+
+</ripple>
